@@ -1,6 +1,6 @@
 # Coroutines Location API Library for Android
 
-[![Build Status](https://travis-ci.org/patloew/CoLocation.svg?branch=main)](https://travis-ci.org/patloew/CoLocation) [![codecov](https://codecov.io/gh/patloew/CoLocation/branch/main/graph/badge.svg)](https://codecov.io/gh/patloew/CoLocation) [![Maven Central](https://img.shields.io/maven-central/v/com.patloew.colocation/colocation.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.patloew.colocation%22%20AND%20a:%22colocation%22) [![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
+[![](https://jitpack.io/v/OrderIn/CoLocation.svg)](https://jitpack.io/#OrderIn/CoLocation) [![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19)
 
 This library wraps the Location APIs in Kotlin coroutines and `Flow`.
 
@@ -79,12 +79,21 @@ A basic sample app is available in the `sample` project.
 
 # Setup
 
-The library is available on Maven Central. Add the following to your `build.gradle`:
+The library is available on Jitpack. Add the following to your `build.gradle`:
 
 ```groovy
 dependencies {
-    implementation 'com.patloew.colocation:colocation:1.1.0'
-    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.github.OrderIn:CoLocation:v1.2.0'
+}
+```
+
+Add it in your root `build.gradle` at the end of repositories:
+```
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
 }
 ```
 
